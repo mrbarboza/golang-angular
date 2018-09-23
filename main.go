@@ -49,6 +49,7 @@ func main() {
 }
 
 func setAuth0Variables() {
+	// Include godotenv module to help with authoriztion keys in a dotenv file
 	err := godotenv.Load()
 	if err != nil {
 		log.Fatal("Error loading .env file")
